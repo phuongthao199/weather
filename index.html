@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b25957ae4f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        #container{
+            border: none;
+            border-radius: 6px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            width: 400px;
+            height: 200px;
+            background-image: url(https://i.pinimg.com/originals/fa/01/42/fa0142566206003877c56870612b026d.gif);
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            padding-top: 40px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+        }
+        #find_button{
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            background-color: white;
+            text-align: center;
+            margin-left: 4px;
+        }
+        .box_1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100px;
+            height: 30px;
+            padding-left: 157px;
+            margin-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+        <input type="text" value="" id="input_place" style="width: 60%;margin-left: 55px;">
+        <button id="find_button"><i class="fa-solid fa-magnifying-glass" ></i></button> 
+    </div>
+        <p id="weather"><span></span></p>
+        <p id="place"></p>
+    <div class="box_1">
+        <p id="temperature" style="font-size: 25px;"></p>
+        <i class="fa-solid fa-temperature-high" style="font-size: 34px; margin-top: 20px;"></i>
+    </div>
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
